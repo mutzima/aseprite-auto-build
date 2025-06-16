@@ -40,7 +40,7 @@ jobs:
         run: |
           mkdir build
           cd build
-          cmake "../src/aseprite" -G Ninja -DCMAKE_BUILD_TYPE=MinSizeRel -DLAF_BACKEND=skia -DSKIA_DIR="../src/skia" -DSKIA_LIBRARY_DIR="../src/skia/out/Release-x64" -DSKIA_LIBRARY="../src/skia/out/Release-x64/skia.lib"
+          cmake "D:/a/aseprite-auto-build/aseprite-auto-build/src/aseprite" -G Ninja -DCMAKE_BUILD_TYPE=MinSizeRel -DLAF_BACKEND=skia -DSKIA_DIR="D:/a/aseprite-auto-build/aseprite-auto-build/src/skia" -DSKIA_LIBRARY_DIR="D:/a/aseprite-auto-build/aseprite-auto-build/src/skia/out/Release-x64" -DSKIA_LIBRARY="D:/a/aseprite-auto-build/aseprite-auto-build/src/skia/out/Release-x64/skia.lib"
           ninja aseprite
           copy "C:/Windows/System32/libcrypto-1_1-x64.dll" ./bin
 
