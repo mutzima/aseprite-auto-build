@@ -29,7 +29,7 @@ def get_latest_tag_skia():
 	response = requests.get(f'https://api.github.com/repos/{SKIA_REPOSITORY}/releases/latest')
 	response_json = response.json()
 	# return response_json['tag_name']
-	return 'm102-861e4743af'
+	return 'm124-08a5439a6b'
 
 def download_skia_for_windows(tag):
 	download_url = f'https://github.com/{SKIA_REPOSITORY}/releases/download/{tag}/{SKIA_RELEASE_FILE_NAME}'
